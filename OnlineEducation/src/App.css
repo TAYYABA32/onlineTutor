@@ -1,0 +1,18 @@
+.home-container {
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/images\ \(6\).jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensures the background covers the full height of the viewport */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
