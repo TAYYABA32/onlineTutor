@@ -26,6 +26,12 @@ export const Hero = () => {
           select category <img src={arrow} alt="" />{" "}
         </p>
         <button>Search now</button>
+        <h5>Popular searches:</h5>
+        <ul>
+          <li>Graduation,</li>
+          <li>Health &</li>
+          <li>sports</li>
+        </ul>
       </div>
     </div>
   );
