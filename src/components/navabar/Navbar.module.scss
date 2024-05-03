@@ -1,48 +1,46 @@
 .navbarContainer {
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #ffffff;
+  background: #0a0f26;
+  color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-ul {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
 
-li {
-  margin-right: 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333333;
-  cursor: pointer;
-}
+    margin: 0;
+    padding: 0;
+  }
 
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+  li {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
 
-button:hover {
-  background-color: #0056b3;
-}
-.liImg {
-  display: flex;
-  align-items: center;
+    cursor: pointer;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-  img {
-    height: 26px;
-    width: auto;
+  button:hover {
+    background-color: #0056b3;
+  }
+  .liImg {
+    display: flex;
+    align-items: center;
   }
 }

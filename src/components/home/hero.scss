@@ -1,61 +1,102 @@
-// Hero.module.scss
-
 .parentHero {
-  content: "";
-  position: absolute;
-  // top: 0;
-  left: 0;
   background: #0a0f26;
   color: white;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
+.rowHero p {
+  margin-top: 30px;
+}
+
 .h1-span {
   color: #f97316;
 }
 
+input[name="keyword"] {
+  height: 1.5rem;
+  width: 736%;
+}
+
+.search-select img {
+  height: 20px;
+}
+
 .rowHero {
-  max-width: 800px; // Maximum width for the content
-  margin: 0 auto; // Center the content horizontally
-  text-align: center; // Center align the text
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
 }
 
 h1 {
-  font-size: 32px; // Font size for the heading
-  font-weight: bold; // Bold font weight
-  margin-bottom: 20px; // Bottom margin for spacing
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 p {
-  font-size: 18px; // Font size for paragraphs
-  margin-bottom: 20px; // Bottom margin for spacing
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.form-control {
-  width: 100%; // Input width
-  padding: 10px; // Input padding
-  margin-bottom: 20px; // Bottom margin for spacing
-  border: 1px solid #ccc; // Border for the input
-  border-radius: 5px; // Border radius
-}
+.rect-box {
+  width: 676px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 9px;
+  gap: 25px;
 
-img {
-  width: 100px; // Image width
-  margin: 20px 0; // Top and bottom margin for spacing
-}
+  .search-text {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    flex-grow: 2;
 
-button {
-  padding: 10px 20px; // Button padding
-  font-size: 18px; // Font size for the button text
-  font-weight: bold; // Bold font weight
-  color: #ffffff; // Text color
-  background-color: #f97316; // Button background color
-  border: none; // No border
-  border-radius: 5px; // Border radius
-  cursor: pointer; // Cursor style
-}
+    svg {
+      fill: #666;
+    }
 
-button:hover {
-  background-color: #f97316; // Button background color on hover
+    input {
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+
+      &::placeholder {
+        color: #999;
+      }
+    }
+  }
+
+  .search-select {
+    display: flex;
+
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px; /* Adjust margin as needed */
+    }
+
+    select {
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+
+  button {
+    background-color: #f97316;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f86300; /* Adjust hover color as needed */
+    }
+  }
 }
