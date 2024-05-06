@@ -1,4 +1,5 @@
 import img from "../../assets/images.png";
+import img1 from "../../assets/img-03.png";
 
 import { CiSearch } from "react-icons/ci";
 import "./hero.scss";
@@ -8,8 +9,7 @@ export const Hero = () => {
       <div className="rowHero">
         <h1>
           A good <span className="h1-span">#education</span> is always a base of
-          a <br />
-          bright future
+          a bright future
         </h1>
         <p>
           Consectur adipiscing elitsedo eiusmod tempor incididuntem utaborate{" "}
@@ -18,7 +18,7 @@ export const Hero = () => {
         </p>
         <div className="rect-box">
           <div className="search-text">
-            <CiSearch size="20px" />
+            <CiSearch className="searchIcon" height={40} width={40} />
             <input
               name="keyword"
               type="text"
@@ -34,13 +34,25 @@ export const Hero = () => {
           </div>
           <button>Search now</button>
         </div>
+        <div className="parentContainer">
+          <h5>Popular searches:</h5>
+          <ul>
+            <li>Graduation,</li>
+            <li>Health &</li>
+            <li>sports</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div className="rightImg">
+          {" "}
 
-        <h5>Popular searches:</h5>
-        <ul>
-          <li>Graduation,</li>
-          <li>Health &</li>
-          <li>sports</li>
-        </ul>
+          <img className="img1" src={img1} alt="" />
+          <div className="bg">
+
+        </div>
+        </div>
+        
       </div>
     </div>
   );

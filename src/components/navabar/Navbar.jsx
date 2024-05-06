@@ -1,4 +1,5 @@
-import style from "./Navbar.module.scss"; // Importing styles from a CSS module
+import style from "./Navbar.module.scss";
+import { IoIosArrowDown } from "react-icons/io";
 
 export const Navbar = () => {
   return (
@@ -50,14 +51,20 @@ export const Navbar = () => {
       </svg>
 
       <ul>
-        <li className={style.liImg}></li>
+        <li>
+          Home <IoIosArrowDown />
+        </li>
+
         <li>How it works</li>
         <li>Find instructors</li>
-        <li className={style.liImg}></li>
-        <li>Contact Us</li>
-      </ul>
+        <li>
+          Product <IoIosArrowDown />
+        </li>
 
-      <button>Get started</button>
+        <li>Contact Us</li>
+
+        <button>Get started</button>
+      </ul>
     </div>
   );
 };
