@@ -119,14 +119,16 @@ p {
   gap: 20px;
   list-style: none;
 }
-.img1 {
-  width: 80%;
-  z-index: 100;
-  position: absolute;
+// .img1 {
+//   width: 100%;
+//   // z-index: 100;
+//   z-index: 2;
+//   position: absolute;
 
-  bottom: -16%;
-  right: -7%;
-}
+//   bottom: -16%;
+//   right: 0px;
+//   // right: -7%;
+// }
 .rightImg {
   width: 30%;
 
@@ -135,11 +137,12 @@ p {
   }
 }
 .bg {
-  background-color: white;
-  width: 100%;
-  z-index: 0;
+  width: 200px;
+  z-index: 2;
   position: absolute;
-  height: 400px;
+  // height: 400px;
+  height: auto;
+  right: 0px;
   bottom: -16%;
-  right: -7%;
+  // right: -7%;
 }

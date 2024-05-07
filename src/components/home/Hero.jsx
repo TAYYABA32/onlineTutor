@@ -46,13 +46,11 @@ export const Hero = () => {
       <div>
         <div className="rightImg">
           {" "}
+          <img className="bg" src={img1} alt="" />
+          {/* <div className="bg">
 
-          <img className="img1" src={img1} alt="" />
-          <div className="bg">
-
+        </div> */}
         </div>
-        </div>
-        
       </div>
     </div>
   );
